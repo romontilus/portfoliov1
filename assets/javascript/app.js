@@ -30,7 +30,7 @@ var portfolioList = [
         overlay: "Meal Planner",
         bigPicture: "assets/media/mealplanner3.png",
         description: "My first group project. We decided on a nutrition based app for those who meal prep. Plan your breakfast, lunch, and dinner and know your macros with a shopping list on the go.  Uses Firebase along with the Google Charts and Edamam APIs to help track your macros for the entire day. Mobile-friendly",
-        location:"https://facebook.com/therealrommel",
+        location:"https://romontilus.github.io/Meal-Planner/",
           },
     {
     title: "Marvel Hang-Man",
@@ -38,7 +38,7 @@ var portfolioList = [
     overlay: "Hang-Man Game",
     bigPicture: "assets/media/comicthumb.png",
     description: "My first project involving javascript. A Marvel-themed Hang-Man game that incorporates familiar characters in the Marvel Comic Universe.",
-    location:"https://facebook.com/therealrommel",
+    location:"https://romontilus.github.io/Word_Guess_Game/",
       },
       {
       title: "NBA Trivia",
@@ -46,7 +46,7 @@ var portfolioList = [
       overlay: "Trivia Game",
       bigPicture: "assets/media/logoextended.png",
       description:"NBA Trivia game from a pretty big basketball nerd. A trivia game that only die-hard NBA fans will be able to ace featuring questions on teams and players from all eras in NBA History. Features the standard 24-second shot clock",
-      location:"https://twitter.com/romontilus",
+      location:"https://romontilus.github.io/TriviaGame/",
     },
     {
         title: "Mass Effect RPG",
