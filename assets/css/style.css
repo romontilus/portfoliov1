@@ -965,13 +965,13 @@ input[type=text], select, textarea {
 }
 
 #contactBox {
+    background-position: 0% 25%;
     height: 90vh;
-    width: 64vw;
+    width: 90vw;
     position: fixed;
     top: 7vh;
-    left: 30vw;
+    left: 0vw;
     overflow-x: hidden;
-    background: #333333;
     border-radius: 12px;
     padding: 15px;
     color: white;
@@ -1002,7 +1002,7 @@ input[type=text], select, textarea {
     cursor: pointer;
     position: relative;
     bottom: 2vh;
-    left: 6vw;
+    left: 36vw;
 }
 
 

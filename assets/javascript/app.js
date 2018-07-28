@@ -542,6 +542,10 @@ function callMe () {
     console.log("clicked");
     if ($("#openContact").hasClass("closed")){
         xPortfolio();
+        $("#menu").removeClass("open");
+        $("#menu").addClass("closed");
+        $("#sideNav").css({"width":"0vw"});
+        $("#menu").removeAttr('style');
         $(".pageContainer").css({"opacity" : ".05"});
         $("#openContact").removeClass("closed");
         $("#openContact").addClass("open");
