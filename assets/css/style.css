@@ -1,0 +1,1009 @@
+
+/* Hides divs instead of using display none css for each div*/
+.hidden {
+    position: absolute;
+    left: -9999px; 
+     opacity: 0;
+    transition: 2s; 
+}
+
+/* Makes divs transparent on the jump up */
+.transparentParent {
+    opacity: 0;
+}
+
+body {
+    background: black;
+    margin: 0;
+    overflow-x: hidden; 
+    transition: 1s;
+    /* opacity: .85; */
+}
+/* header and nav */
+.masthead {
+    width: 100vw;
+}
+
+.globalNav {
+    width: 100vw;
+}
+
+.trueNav {
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    background-color: white;
+    height: 50px;
+    width: 100vw;
+    box-shadow: 2px 2px 2px 2px  #800000;
+    /* background: linear-gradient(90deg,#800000,#0d0d0d); */
+
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+
+.trueNav a {
+    float: right;
+    display: block;
+    color: black;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+  #me {
+    float: left;
+    /* cursor: pointer; */
+}
+
+#openContact {
+    cursor: pointer;
+}
+
+/* #openContact:hover {
+    color: gold;
+    text-shadow: 0px 0px 10px #DA4E46;
+} */
+
+/* The side navigation menu */
+.regSideNav {
+    height: 100vh; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 6; /* Stay on top */
+    top: 0vh; /* Stay at the top */
+    left: 0vw;
+    background-color: transparent; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    
+}
+
+/* The navigation menu links */
+.regSideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.regSideNav a:hover {
+    color: #f1f1f1;
+}
+
+/*Buttons */
+button:focus {outline:0;}
+
+#c-logo {
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+
+#cButton {
+    width: 55px;
+    /* width: 4%; */
+    /* height: 100%; */
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer; 
+    user-select: none;
+    position: absolute;
+    left: 48vw;
+    bottom: 0vh;
+    z-index: 9;
+}
+#menu {
+    
+    float: left;
+    width: 3vw;
+    height: 35px;
+    border: none;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    /* border-radius: 30px; */
+    font-size: 25px;
+    margin: 5px  10px ;
+    cursor: pointer; 
+    user-select: none;
+    z-index: 9;
+}
+
+#menu:hover {
+    user-select: none;
+    color: gold;
+    text-shadow: 0px 0px 10px #DA4E46
+}
+
+#menu:active {
+    border: none;
+}
+
+#tout {
+    position: absolute;
+    top: 85vh;
+    left: 95vw;
+    background-color:  transparent;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: .65;
+}
+
+#aucun {
+    position: absolute;
+    top: 85vh;
+    left: 95vw;
+    background-color:  transparent;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: .65;
+    display: none;
+}
+
+#tout:hover {
+    opacity: 1;
+    text-shadow: 10px 10px 10px 10px white 
+}
+
+#aucun:hover {
+    opacity: 1;
+    text-shadow: 10px 10px 10px 10px white 
+}
+  /* Page content */
+.pageContainer {
+   margin-top: 3vh;
+   /* width: 100vw;
+   height: 100vh; */
+   transition: .3s;
+}
+
+#MBS {
+    width: 100vw;
+    position: relative;
+    top: 20vh;
+    left: 10vw;
+    right: 10vw;
+}
+
+#parallax1 {
+    /* The thumbnail used */
+    margin-top: 15%;
+    margin-top: 55vh;
+    background-image: url("../media/slender1.jpg");
+
+    /* Set a specific height */
+    min-height: 375px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax2 {
+     /* The thumbnail used */
+     /* margin-top: 3%; */
+     margin-top: 5vh;
+     background-image: url("../media/slender2.jpg");
+ 
+     /* Set a specific height */
+     min-height: 375px; 
+ 
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+#parallax3 {
+     /* The thumbnail used */
+     /* margin-top: 3%; */
+     margin-top: 5vh;
+     background-image: url("../media/slender4.jpg");
+     filter:hue-rotate(90deg);
+     /* Set a specific height */
+     min-height: 375px; 
+ 
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+/* About Me Sections */
+#aboutMe {
+    margin-top: 6vh;
+    /* height: 40%; */
+    height: 85vh;
+    /* background: url("../media/what.jpg"); */
+    /* background: url("../media/slender1.jpg"); */
+    /* background: url("../media/what2.jpg");
+    background-size: cover;
+    background-position: 100% 100%; */
+}
+
+.aboutMeDynamic {
+    /* margin-top: 4.5%; */
+    background: url("../media/what2.jpg");
+    background-size: cover;
+    background-position: 100% 100%;
+    transition: 1s;
+}
+
+#aboutMe2{
+    margin-top: 7vh;
+    height: 85vh;
+}
+  
+.aboutMe2Dynamic {
+    background: url("../media/what.jpg");
+    /* background-size: cover; */
+    background-position: 90% 0%;
+    transition: 1s;
+}
+
+#aboutMe3{
+    margin-top: 7vh;
+    margin-bottom: 4vh;
+    height: 85vh;
+}
+
+.aboutMe3Dynamic {
+    background: url("../media/city2.jpg");
+    background-size: cover;
+    background-position: 20% 100%;
+    transition: 1s;
+}
+
+  /* The sticky class for the header */
+.sticky {
+    z-index: 7;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    box-shadow: 2px 2px 2px 2px black;
+}
+  
+/* 3 boxes */
+
+#mindBox,
+#bodyBox,
+#soulBox {
+    /* height: 400px; */
+    height: 50vh;
+    /* width: 25%; */
+    width: 50vh;
+    /* margin-top: 10%; */
+    /* margin-top: 20vh; */
+    /* margin-top: 10vh; */
+    /* margin-left: 6%; */
+    /* margin-right: 1%; */
+    margin-right: 2vh;
+    display: inline-flex;
+    opacity: .85;
+    vertical-align:top;
+    /* display: none; */
+    /* position: relative;
+    top: 20vh;
+    left: 10vw;
+    right: 10vw; */
+}
+
+#mindBox{
+    /* background: #990000; */
+    /* margin-left: 11% */
+}
+
+#mindBox:hover {
+    /* box-shadow: 3px 3px 3px 3px #990000; */
+    background: #990000;
+    opacity: 1;
+}
+
+#brain {
+    /* height: 50%; */
+    height: 15em;
+    /* width: 75%; */
+    width: 17em;
+    position: relative;
+    /* top: 20%; */
+    top: 10vh;
+    /* left: 10%; */
+    left: 3em;
+    right: 3em;
+}
+
+#bodyBox {
+    /* background: #F9B44C;    */
+    /* background: #0d0d0d; */
+}
+
+#bodyBox:hover {
+    /* box-shadow: 3px 3px 3px 3px #0d0d0d; */
+    background: #0d0d0d;
+    opacity: 1;
+}
+
+#muscle {
+    /* height: 50%; */
+    height: 15em;
+    /* width: 75%; */
+    width: 17em;
+    position: relative;
+    /* top: 20%; */
+    top: 5em;
+    /* left: 15%; */
+    left: 3em;
+    right: 3em;
+}
+#soulBox {
+    /* background: #ffd900; */
+}
+
+#soulBox:hover {
+    background: #ffd900;
+    /* box-shadow: 3px 3px 3px 3px #ffd900; */
+    opacity: 1;
+}
+
+#bass {
+    /* height: 50%; */
+    height: 15em;
+    /* width: 75%; */
+    width: 17em;
+    position: relative;
+    /* top: 20%; */
+    top: 4em;
+    /* left: 15%; */
+    left: 5em;
+    right: 3em;
+}
+/* Quick profile */
+#profile,
+#pictureBox,
+#socialMedia,
+#pictureBox2,
+#profile2,
+#media,
+#profile3,
+#pictureBox3 {
+    /* background: black; */
+    /* border: solid white 10px; */
+    display: inline-flex;
+    opacity: .9;
+    vertical-align:top;
+    /* display: none; */
+}
+
+#profile {
+    /* height: 400px; */
+    height: 30vh;
+    /* width: 35%; */
+    width: 35vw;
+    /* margin-left: 22%; 
+     margin-top: 10%; */
+    position: relative;
+    top: 30vh;
+    left: 22vw; 
+    /* align-items: center; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* background: whitesmoke; */
+    background: transparent;
+    /* background: rgba(0,0,0,.2); */
+}
+
+#profile2 {
+    /* height: 400px; */
+    height: 55vh;
+    width: 30vw;
+    /* margin-left: 4%;
+    margin-top: 10%; */
+    position: relative;
+    top: 20vh;
+    left: 5vw;
+    /* align-items: center; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: transparent;
+}
+
+#profile3 {
+     /* height: 400px; */
+     height: 55vh;
+     width: 30%;
+     width: 30vw;
+     /* margin-left: 4%;
+     margin-top: 10%; */
+     position: relative;
+     top: 20vh;
+     left: 10vw;
+     /* align-items: center; */
+     overflow-y: scroll;
+     overflow-x: hidden;
+     background: transparent;
+    }
+
+#profileText,
+#profile2Text {
+    /* color: #0d0d0d; */
+    color: transparent;
+}
+
+#pictureBox,
+#pictureBox2,
+#pictureBox3 {
+    /* width: 25%; */
+    width: 25vw;
+    /* background-thumbnail: url("../media/Rommel1.png"); */
+    /* height: 600px; */
+    height: 75vh;
+    position: relative;
+    top: 10vh;
+    left: 30vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position: 35% 50%;
+    overflow: hidden;
+    opacity: 1;
+    transition: 2s;
+}
+
+#pictureBox2 {
+    position: relative;
+    top: 10vh;
+    left: 8vw;
+}
+
+#pictureBox3 {
+    position: relative;
+    top: 10vh;
+    left: 4vw;
+}
+
+#socialMedia {
+    height: 7vh;
+    width: 25vw;
+    position: relative;
+    top: 65vh;
+    right: 33vw;
+    /* margin-left: 27%;
+    margin-top: -9%; */
+    justify-content: center;
+    align-items: center;
+    /* background: black; */
+    background: transparent;
+}
+
+#gmail,
+#linkedIn,
+#github,
+#twitter {
+    color: transparent;
+    font-size: 2em;
+    padding: 10px;
+    /* display: flex; */
+    /* display: none; */
+}
+
+
+.smLinks:hover {
+     color:whitesmoke
+}
+
+#media {
+       /* height: 400px; */
+       height: 55vh;
+       width: 30vw;
+       position: relative;
+       top: 20vh;
+       left: 9vw;
+       overflow-y: scroll;
+       overflow-x: hidden;
+       background: transparent;
+}
+
+/* Contact Popup */
+#contact {
+    /* display: none; */
+}
+
+#contactBox {
+    height: 80vh;
+    width: 30vw;
+    position: fixed;
+    top: 11vh;
+    left: 34vw;
+    overflow-x: hidden;
+    background: #333333;
+    background-image:  url("../media/blackbg.jpg");
+    background-position: 0% 50%;
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+    z-index: 5;
+}
+
+#closeContact {
+    position: fixed;
+    top: 11vh;
+    left: 70vw;
+    background-color:  transparent;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: .65;
+    z-index: 5;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+#submit {
+    background-color: #DA4E46;
+    color: white;
+    font-size: 1em;
+    width: 5em;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Portfolio Popup */
+
+#portfolio {
+    /* display: none */
+}
+
+#portfolioBox {
+    height: 80vh;
+    width: 50vw;
+    position: fixed;
+    top: 11vh;
+    left: 25vw;
+    overflow-x: hidden;
+    /* background: #333333; */
+    background-image:  url("../media/blackbg.jpg");
+    /* background-color:rgba(244, 244, 245, 0.08); */
+    background-position-x: 25%;
+    border-radius: 12px;
+    z-index: 5;
+    display: inline-flex;
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#closePortfolio {
+    position: fixed;
+    top: 11vh;
+    left: 77vw;
+    background-color:  transparent;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: .65;
+    z-index: 5;
+}
+
+.items {
+    height: 100%;
+    width: 23%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    left: 1vw;
+}
+/* Container needed to position the overlay. Adjust the width as needed */
+.project {
+    position: relative;
+    /* left: 2%;
+    top: 2%;
+    bottom: 2%; */
+    /* width: 12vw;
+    height: 12vh; */
+    display: inline;
+    
+  }
+  /* Make the thumbnail to responsive */
+  .thumbnail {
+    display: block;
+    width: 100%;
+    height: 25%;
+    /* filter: sepia(75%); */
+}
+  
+  /* The overlay effect - lays on top of the container and over the thumbnail */
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 10vw;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 1em;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* When you mouse over the container, fade in the overlay title */
+  .project:hover .overlay {
+    opacity: 1;
+  }
+
+#info {
+    /* background: purple; */
+    height: 100%;
+    width: 75%;
+
+}
+
+.projTitle,
+.projPic,
+.projDescription {
+    /* background: teal; */
+    height: 20%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 3%;
+    color: whitesmoke;
+    /* color: #818181; */
+    background-color: rgba(19, 19, 19, 0.521);
+    background-color: rgba(249, 247, 247, 0.19);
+    background-color: rgba(51, 51, 51, 0.3);
+
+}
+
+.projTitle {
+    margin-top: 5%;
+    height: 10%;
+    font-size: 3em;
+    padding-top: 2vh;
+    text-align: center;
+    background-color: transparent;
+}
+
+.projPic {
+    height: 30vh;
+    width: 15vw;
+}
+
+.projPreview {
+    height: 100%;
+    width: 100%;
+}
+
+.projDescription {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-indent: 2em;
+}
+
+.projButton {
+
+    background-color: #DA4E46;
+    color: black;
+    font-size: 1em;
+    height: 2em;
+    width: 5em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    left: 16vw;
+    display: none;
+}
+/* footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
+    background-color: inherit;
+    color: white;
+    text-align: center;
+ } */
+
+ @media screen and (max-width: 640px) {
+
+ html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  body {
+    position: relative;
+  }
+
+  .trueNav {
+    box-shadow: 2px 2px 2px 2px  black;
+  }
+  .trueNav a {
+      font-size: 13.5px;
+  }
+
+  #cButton {
+    left: 43vw;
+  }
+
+  #tout {
+    position: absolute;
+    left: -9999px; 
+     opacity: 0;
+    transition: 2s; 
+  }
+
+  .regSideNav a {
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+#MBS {
+    position: inherit;
+    margin-top: 6vh;
+    margin-left: 0vw;
+}
+
+#mindBox,
+#bodyBox,
+#soulBox {
+    height: 33vh;
+    width: 100vw;
+ } 
+
+ #brain, 
+ #muscle,
+ #bass  {
+
+    height: 10em;
+    width: 10em;
+    margin-left: 8vw;
+    margin-top: -8vh;
+ }
+
+#mindBox {
+    background: #800000;
+}
+
+#bodyBox {
+    background: #0d0d0d;
+}
+ #soulBox {
+    background: #ffd900;
+}
+
+ #brain {
+     margin-left: 14vw;
+     margin-top: -4vh;
+ }
+
+ #muscle {
+     margin-left: 16vw;
+     margin-top: -9vh;
+
+ }
+
+ #bass {
+     margin-left: 11vw;
+     margin-top: -8vh;
+ }
+
+ #pictureBox,
+ #pictureBox2,
+ #pictureBox3 {
+     border-radius: 50%;
+     height: 20vh;
+     width: 50vw;
+     /* background: purple; */
+     /* left: -10vw; */
+     top: -23vh;
+     left: 25vw;
+     background-position-y: 12%;
+ }
+
+ #pictureBox3 {
+    top: 6vh;
+    left: 25vw;
+ }
+
+ #profile,
+ #profile2,
+ #profile3 {
+     width: 70vw;
+     height: 30vh;
+     left: 15vw;
+ }
+
+#profile2 {
+    top: 30vh
+}
+
+#profile3 {
+    top: 10vh;
+}
+
+ #socialMedia {
+     top: 40vh;
+     left: -13vw;
+ }
+
+ .aboutMeDynamic {
+    background-position-x: 0%;
+ }
+
+ .aboutMe2Dynamic {
+    margin-top: 11.5vh;
+    background-position: 30% 70%;
+ }
+
+ .aboutMe3Dynamic {
+     background-position: 15% 0%;
+     margin-top: 12.5vh;
+ }
+ 
+ #portfolioBox {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 5vh;
+    left: -1vw;
+    overflow-x: hidden;
+    /* background: #333333; */
+    /* background-image:  url("../media/blackbg.jpg"); */
+    /* background-color:rgba(244, 244, 245, 0.08); */
+    background-position-x: 15.5%;
+    border-radius: 12px;
+    z-index: 5;
+    display: inline-flex;
+    box-shadow: 0px 0px 20px 0px transparent;
+}
+
+.projPic {
+    height: 30vh;
+    width: 50vw;
+    position: relative;
+    top: 6vh;
+}
+
+.projDescription {
+    position: relative;
+    top: 8vh;
+}
+
+.projButton {
+    position: relative;
+    top: 10vh;
+    left: 25vw;
+}
+
+.thumbnail {
+    display: block;
+    width: 100%;
+    height: 20%;
+    /* filter: sepia(75%); */
+}
+
+.overlay {
+  visibility: hidden;
+}
+
+#closePortfolio {
+    position: fixed;
+    top: -3vh;
+    left: 0vw;
+    background-color:  transparent;
+    color: transparent;
+    border: none;
+    text-decoration: none;
+    font-size: 5em;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: .65;
+    z-index: 99;
+}
+
+#contactBox {
+    height: 90vh;
+    width: 64vw;
+    position: fixed;
+    top: 7vh;
+    left: 30vw;
+    overflow-x: hidden;
+    background: #333333;
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+    z-index: 5;
+}
+
+#closeContact {
+    position: fixed;
+    top: -3vh;
+    left: 0vw;
+    background-color:  transparent;
+    color:  transparent;
+    border: none;
+    text-decoration: none;
+    font-size: 5em;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: .65;
+    z-index: 99; 
+}
+
+#submit {
+    font-size: 1em;
+    width: 5em;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    bottom: 2vh;
+    left: 6vw;
+}
+
+
+}

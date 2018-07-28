@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rommel C. Montilus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/media/redMonkey.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+<body>
+    <header class="masthead">
+        <div class="globalNav">
+            <nav class="trueNav">
+                    <!-- <button>Display the height of div</button> -->
+                <button id="menu" onclick="sideMenu()" class="closed"><i class="fas fa-bars"></i></button>
+                <a id="openContact" class="closed" onclick="callMe()">Contact</a>
+                <a href="#blog">Blog</a>
+                <a id="me" href="#me">Rommel C. Montilus</a>
+                <button id="cButton"><img id="c-logo" src="assets/media/clogo1.png"></button> 
+                <!-- <img id="c-logo" src="assets/media/clogo1.png"> -->
+
+                </nav>
+            </div>
+       
+    </header>
+    <div id="sideNav" class="regSideNav">
+            <a href="#">Why?</a>
+            <a id="openPortfolio" class="closed" onclick="checkMe()">Portfolio</a>
+            <a href="#">v1</a>
+    </div>
+
+    <section id="contact" class="hidden">
+            <i id="closeContact" class="fas fa-times"></i>
+            <div id="contactBox"> 
+                <!-- <form action="action_page.php"> -->
+
+                <label for="fname">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+            
+                <label for="org">Organization</label>
+                <input type="text" id="org" name="org" placeholder="Your organization..">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="usa">USA</option>
+                  <option value="canada">Canada</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <button id="submit"  value="submit"><i class="fas fa-envelope"></i></button>            
+              </form> 
+            </div>   
+        </section>
+
+        <section id="portfolio" class="hidden">
+                <i id="closePortfolio" class="fas fa-times"></i>
+            <div id="portfolioBox">
+
+                <div class="items">
+                 </div>
+
+                 <div id="info">
+                    <div class="projTitle">Portfolio</div>
+                    <div class="projPic"><img class="projPreview" src="assets/media/slender1.jpg"></div>
+                    <div class="projDescription"></div>
+                    <a class="projLink"><button class="projButton"><i class="fas fa-angle-right"></i></button></a>
+
+                 </div>
+                    </div>
+
+        </section>
+   
+   <div class="pageContainer">
+   
+   <section id="MBS">
+    <div id="mindBox">
+            <img id="brain" src="assets/media/brain2.png">
+    </div>
+
+    <div id="bodyBox">
+            <img id="muscle" src="assets/media/muscle.png">
+            <!-- <i id="muscle" class="fas fa-basketball-ball"></i> -->
+    </div>
+
+    <div id="soulBox"> 
+            <img id="bass" src="assets/media/bass.png">
+    </div>
+</section>
+    <button id="tout"><i id="icon" class="fas fa-angle-double-down"></i></button>
+    <button id="aucun"><i id="icon" class="fas fa-angle-double-up"></i></button>
+
+    <section id="parallax1" class="hidden">
+        
+    </section>
+
+    <section id="aboutMe" class="hidden"> 
+    <div id="profile">
+        <p id="profileText"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        A nesciunt accusamus possimus magnam mollitia tempore sunt numquam incidunt cum, 
+        nisi corporis ab qui esse consequatur, voluptatem unde suscipit aliquam explicabo?
+    </p>
+    </div>
+
+    <div id="pictureBox"> </div>
+    <div id="socialMedia"> 
+        <a class="smLink"href="mailto:romontilus@gmail.com"><i id="gmail" class="fas fa-envelope"></i></a>
+        <a class="smLink" href="https://www.linkedin.com/in/romontilus/"><i id="linkedIn" class="fab fa-linkedin"></i></a>
+        <a class="smLink"href="https://github.com/romontilus"><i id="github" class="fab fa-github"></i></a>
+        <a class="smLink"href="https://twitter.com/romontilus"><i id="twitter" class="fab fa-twitter"></i></a>
+    </div>
+    </section>
+
+    <section id="parallax2" class="hidden">
+        
+        </section>
+    
+        <section id="aboutMe2" class="hidden"> 
+                <div id="profile2">
+                    <p id="profile2Text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    A nesciunt accusamus possimus magnam mollitia tempore sunt numquam incidunt cum, 
+                    nisi corporis ab qui esse consequatur, voluptatem unde suscipit aliquam explicabo?
+                </p>
+                </div>
+            
+                <div id="pictureBox2"> </div>
+                <div id="media"> </div>
+        </section>
+
+
+    <section id="parallax3" class="hidden">
+        
+        </section>
+
+
+        <section id="aboutMe3" class="hidden"> 
+                <div id="pictureBox3"> </div>    
+            
+            <div id="profile3">
+                    <p id="profile3Text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    A nesciunt accusamus possimus magnam mollitia tempore sunt numquam incidunt cum, 
+                    nisi corporis ab qui esse consequatur, voluptatem unde suscipit aliquam explicabo?
+                </p>
+                </div>
+            
+                <div id="socialMedia3"> </div>
+                           
+        </section>
+
+
+</div>   
+<!-- <footer>
+    Footer 
+</footer> -->
+</body>
+</html>
