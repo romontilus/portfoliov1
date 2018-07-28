@@ -648,7 +648,7 @@ function xPortfolio () {
 
         $(".projTitle").text("Portfolio").removeClass("hidden");
         $(".projPreview").attr("src", "assets/media/slender1.jpg").removeClass("hidden");
-        $(".projDescription").text("Here's a little info about myself").removeClass("hidden");
+        $(".projDescription").text("").removeClass("hidden");
     }, 2000); 
 }
 
