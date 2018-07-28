@@ -20,7 +20,7 @@ var endAnimation = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimation
 // var originalFiller = $(".projTitle").text("Portfolio");
 // var originalFiller1 = $(".projPreview").attr("src", "assets/media/slender3.jpg");
 // var originalFiller2 = $(".projDescription").text("Here's a little info about myself");
-
+//
 
 //Portfolio Array
 var portfolioList = [
