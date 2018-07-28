@@ -637,7 +637,7 @@ function xPortfolio () {
     $(document).on("click", '#soulBox', ki);
     $(".projTitle").text("Portfolio").addClass("hidden");
     $(".projPreview").attr("src", "assets/media/slender1.jpg").addClass("hidden");
-    $(".projDescription").text("Here's a little info about myself").addClass("hidden");
+    $(".projDescription").text("").addClass("hidden");
     $(".items").empty();
     if ($("#menu").hasClass("closed")) {
         $(".pageContainer").removeAttr("style");
